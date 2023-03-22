@@ -18,6 +18,29 @@ class FactorialTest extends TestCase{
         $this->assertEquals(1,$result);
     }
 
+    public function testNumber(){
+
+        $factnum =new Factorial();
+        $result = $factnum->fact(5);
+        $this->assertEquals(120,$result);
+    }
+
+    public function testRandom(){
+
+        $factnum =new Factorial();
+        $result = $factnum->fact(8);
+        $this->assertEquals(40320,$result);
+    }
+
+    public function testNegative(){
+
+        $factnum =new Factorial();
+        $result = $factnum->fact(-3);
+        $this->assertEquals(null,$result);
+    }
+
+
+
   
 
    
